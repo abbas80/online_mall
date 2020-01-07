@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".product_discriptionFragment">
+
+    <TextView
+        android:id="@+id/tv_product_discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="The phone has a lot of very Good specifications,it is a must buy product ,Multitasking and day to day performance of the phone is excellent.There is no competetion to this phone in this price range in the market. "
+        android:layout_margin="16dp"/>
+</FrameLayout>

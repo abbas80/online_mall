@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@color/text"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/product_icon_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/product_name_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Mi note 6 pro(Black)"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/product_icon_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toEndOf="@+id/product_icon_cart"
+        app:layout_constraintTop_toTopOf="@+id/product_icon_cart"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/no_of_coupons_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/coupon"
+        android:drawablePadding="8dp"
+        android:drawableTint="#9931AD"
+        android:text="2 coupons"
+        android:textColor="#9931AD"
+        app:layout_constraintEnd_toEndOf="@+id/product_name_cart"
+        app:layout_constraintStart_toStartOf="@+id/product_name_cart"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_cart" />
+
+    <TextView
+        android:id="@+id/product_price_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="RS- 11999/-"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_of_coupons_cart" />
+
+    <TextView
+        android:id="@+id/cutted_price_cart"
+        android:layout_width="63dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="RS-14999/-"
+        app:layout_constraintBottom_toBottomOf="@+id/product_price_cart"
+        app:layout_constraintEnd_toStartOf="@+id/product_price_cart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/product_icon_cart"
+        app:layout_constraintTop_toTopOf="@+id/product_price_cart"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/cutted_price_cart"
+        app:layout_constraintEnd_toEndOf="@+id/cutted_price_cart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cutted_price_cart"
+        app:layout_constraintTop_toTopOf="@+id/cutted_price_cart" />
+
+    <TextView
+        android:id="@+id/couponsApplied_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Coupon applied"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/offers_applied_cart"
+        app:layout_constraintStart_toStartOf="@+id/offers_applied_cart"
+        app:layout_constraintTop_toBottomOf="@+id/offers_applied_cart" />
+
+    <TextView
+        android:id="@+id/offers_applied_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Offer Applied"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/product_price_cart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/product_price_cart"
+        app:layout_constraintTop_toBottomOf="@+id/product_price_cart" />
+
+    <TextView
+        android:id="@+id/product_quantity_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/redeem_btn"
+        android:backgroundTint="#000000"
+        android:drawableRight="@drawable/downarrow"
+        android:drawableTint="#000000"
+        android:padding="3dp"
+        android:text="Qty 1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/couponsApplied_cart"
+        app:layout_constraintStart_toEndOf="@+id/product_icon_cart"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:id="@+id/coup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#CE1414"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/couponsApplied_cart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chech price after Redemption "
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redeem_btn"
+            android:text="REDEEM"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remove_from_cart_btn"
+        android:layout_width="395dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coup"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/bin"
+            android:drawableLeft="@drawable/bin"
+            android:drawablePadding="2dp"
+            android:drawableTint="#000000"
+            android:gravity="center"
+            android:text="Remove item" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/slider_background"
+    android:elevation="10dp">
+
+    <ImageView
+        android:id="@+id/horizontal__image"
+        android:layout_width="46dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/horizontal__product"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+
+        android:text="MI Note 6 pro"
+        android:textColor="#000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal__image" />
+
+    <TextView
+        android:id="@+id/horizontal_product__discription"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center_vertical"
+        android:text="SD 625 cpu."
+        android:textColor="#4CAF50"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/horizontal__product"
+        app:layout_constraintStart_toStartOf="@+id/horizontal__product"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal__product" />
+
+    <TextView
+        android:id="@+id/horizontal_product__price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:gravity="center_horizontal"
+        android:text="Rs 11999/-"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/horizontal_product__discription"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_product__discription"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
